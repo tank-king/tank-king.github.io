@@ -35,6 +35,200 @@ ul {
     color: #fff;
     font-size: 25px;
     border-radius: 1000px;
+    font-weight: normal;
+    padding: 10px 20px;
+    margin: 0 15px;
+    transition: color 0.3s ease, background-color 0.2s ease; /* Add a smooth color transition */
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    /*color: #222233; !* Change the color on hover *!*/
+}
+
+.nav-link:focus {
+    color: white;
+    /*border: 2px solid orange;*/
+}
+
+
+.logo-nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center; /* Center the links horizontally */
+}
+
+.logo {
+    padding: 10px;
+    width: 64px;
+    height: auto;
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.25);
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    /*border-radius: 10px;*/
+}
+
+
+.skill-heading{
+    padding: 10px;
+    display: inline-block;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1000px;
+}
+
+.sub-skill-heading{
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
+    display: inline-flex;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-radius: 1000px;
+}
+.sub-skill-heading:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+.skill-nav{
+    overflow: auto;
+    margin-left: 40px;
+}
+
+.skill-nav-link{
+    /*background-color: #ff6347;*/
+}
+
+.sub-skill-nav{
+    margin-left: 40px;
+}
+
+
+.sub-skill-nav-link{
+    padding: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1000px;
+}
+
+.content {
+    overflow: auto;
+    width: 40%;
+    justify-content: center;
+    font-family: "QuickSand", sans-serif;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 25px;
+    display: block;
+    max-height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease;
+    /*transform-origin: left;*/
+    /*transform: scaleX(0);*/
+    /*background-color: white;*/
+}
+
+.content.active {
+    display: block;
+    /*transform: scaleX(1);*/
+    opacity: 1;
+}
+
+.content:not(.active) {
+    display: none;
+    opacity: 0;
+}
+
+/* Hide scrollbar */
+.content::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.content::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.content-highlight {
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.heading {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-family: "QuickSand", sans-serif;
+    color: white;
+    font-size: 100px;
+}
+
+.overlay {
+    position: fixed;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+html, body, .sketch {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav {
+    /*background-color: #333;*/
+    font-family: QuickSand, sans-serif;
+    /*float: left;*/
+    /*padding: 10px 0;*/
+}
+
+.nav-selected {
+    background-color: #ff6347;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-content-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 1000px;
     padding: 10px 20px;
     margin: 0 15px;
     transition: color 0.3s ease, background-color 0.2s ease; /* Add a smooth color transition */
