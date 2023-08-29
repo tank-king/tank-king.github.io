@@ -26,7 +26,7 @@ class Game extends Scene {
         // p5js.fill("white")
         // p5js.noStroke()
         // p5js.text("Tank King", 50, 125)
-        text("Tank King", "impact", 100, "white", 50, 125, null, null);
+        // text("Tank King", "impact", 100, "white", 50, 125, null, null);
     }
 }
 
