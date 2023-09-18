@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../css/gamedev.css">
+
+    <title>Tank King</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+
+</style>
+<body>
+    <div class="sketch"></div>
+    <div class="overlay">
+        <div class="heading center-div">
+            #GameDev
+        </div>
+        <div class="logo-nav">
+            <nav>
+                <ul>
+                    <li><a href="https://tank-king.itch.io" target="_blank">
+                        <img class="logo" src="../assets/images/logos/itchio-logo-textless-white.png"
+                             alt="itch.io logo"></a></li>
+                    <li><a href="https://github.com/tank-king" target="_blank">
+                        <img class="logo" src="../assets/images/logos/github-mark-white.png" alt="github.com logo"></a>
+                    </li>
+                    <li><a href="https://youtube.com/c/RounakBhowmik" target="_blank">
+                        <img class="logo" src="../assets/images/logos/yt_icon_mono_dark.png" alt="youtube logo"></a>
+                    </li>
+                    <li><a href="https://discord.gg/qh8XGWypvg" target="_blank">
+                        <img class="logo" src="../assets/images/logos/discord-logo.png" alt="discord logo"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="center-div" style="font-size: 20px; font-style: italic">
+            <div>
+                graphics invites users to your game, gameplay ensures they stay<br>
+                <div style="text-align: right">- me</div>
+            </div>
+        </div>
+        <div class="card-container center-div">
+            <div class="center-div">
+                <!--                <table>-->
+                <!--                    <tr>-->
+                <!--                        <td>-->
+                <!--                            <a id="defender" class="game-dev-card" href="">-->
+                <!--                                <div class="game-dev-card-content center-div">-->
+                <!--                                    <div id="defender-img" class="game-img">-->
+                <!--                                    </div>-->
+                <!--                                    <br>-->
+                <!--                                    <div class="center-div">-->
+                <!--                                        <div style="width: 80%;">-->
+                <!--                                            <span style="font-size: 25px; font-style: italic"><b>Defender Remastered</b></span>-->
+                <!--                                            <div></div>-->
+                <!--                                            <p>-->
+                <!--                                                A Remaster of the 1980's classic, now featuring an online Leaderboard!-->
+                <!--                                            </p>-->
+                <!--                                            <div class="made-with-tool">-->
+                <!--                                                Pygame-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </a>-->
+                <!--                        </td>-->
+                <!--                        <td>-->
+                <!--                            <a id="aqua-refresh" class="game-dev-card" href="">-->
+                <!--                                <div class="game-dev-card-content center-div">-->
+                <!--                                    <div id="aqua-refresh-img" class="game-img">-->
+                <!--                                    </div>-->
+                <!--                                    <br>-->
+                <!--                                    <div class="center-div">-->
+                <!--                                        <div style="width: 80%;">-->
+                <!--                                            <span style="font-size: 25px; font-style: italic"><b>Aqua Refresh</b></span>-->
+                <!--                                            <div></div>-->
+                <!--                                            <p>-->
+                <!--                                                This is a simple game about cleaning a public pond which gets constantly-->
+                <!--                                                filled with garbage and increases the pollution level.-->
+                <!--                                            </p>-->
+                <!--                                            <div class="made-with-tool">-->
+                <!--                                                Pygame-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </a>-->
+                <!--                        </td>-->
+                <!--                        <td>-->
+                <!--                            <a id="mineswept-island" class="game-dev-card" href="">-->
+                <!--                                <div class="game-dev-card-content center-div">-->
+                <!--                                    <div id="mineswept-island-img" class="game-img">-->
+                <!--                                    </div>-->
+                <!--                                    <br>-->
+                <!--                                    <div class="center-div">-->
+                <!--                                        <div style="width: 80%;">-->
+                <!--                                            <span style="font-size: 25px; font-style: italic"><b>Dimension Beats</b></span>-->
+                <!--                                            <div></div>-->
+                <!--                                            <p>-->
+                <!--                                                A rythm-based action game made using pygame made for the Pygame-->
+                <!--                                                Community-->
+                <!--                                                Summer Jam 2022.-->
+                <!--                                            </p>-->
+                <!--                                            <div class="made-with-tool">-->
+                <!--                                                Godot-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </a>-->
+                <!--                        </td>-->
+                <!--                    </tr>-->
+                <!--                    <tr>-->
+                <!--                        <td>-->
+                <!--                            <a id="dicey" class="game-dev-card" href="">-->
+                <!--                                <div class="game-dev-card-content">-->
+                <!--                                    <div id="dicey-img" class="game-img">-->
+                <!--                                    </div>-->
+                <!--                                    <br>-->
+                <!--                                    <div class="center-div">-->
+                <!--                                        <div style="width: 80%;">-->
+                <!--                                            <span style="font-size: 25px; font-style: italic"><b>Dimension Beats</b></span>-->
+                <!--                                            <div></div>-->
+                <!--                                            <p>-->
+                <!--                                                A rythm-based action game made using pygame made for the Pygame-->
+                <!--                                                Community-->
+                <!--                                                Summer Jam 2022.-->
+                <!--                                            </p>-->
+                <!--                                            <div class="made-with-tool">-->
+                <!--                                                Javascript-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </a>-->
+                <!--                        </td>-->
+                <!--                        <td>-->
+                <!--                            <div id="dimension-beats" class="game-dev-card">-->
+                <!--                                <div class="game-dev-card-content center-div">-->
+                <!--                                    <div id="dimension-beats-img" class="game-img">-->
+                <!--                                    </div>-->
+                <!--                                    <br>-->
+                <!--                                    <div class="center-div">-->
+                <!--                                        <div style="width: 80%;">-->
+                <!--                                            <span style="font-size: 25px; font-style: italic"><b>Dimension Beats</b></span>-->
+                <!--                                            <div></div>-->
+                <!--                                            <p>-->
+                <!--                                                A rythm-based action game made using pygame made for the Pygame-->
+                <!--                                                Community-->
+                <!--                                                Summer Jam 2022.-->
+                <!--                                            </p>-->
+                <!--                                            <div class="made-with-tool">-->
+                <!--                                                Pygame-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </td>-->
+                <!--                        <td>-->
+                <!--                            <div id="bug-invaders" class="game-dev-card">-->
+                <!--                                <div class="game-dev-card-content center-div">-->
+                <!--                                    <div id="bug-invaders-img" class="game-img">-->
+                <!--                                    </div>-->
+                <!--                                    <br>-->
+                <!--                                    <div class="center-div">-->
+                <!--                                        <div style="width: 80%;">-->
+                <!--                                            <span style="font-size: 25px; font-style: italic"><b>Dimension Beats</b></span>-->
+                <!--                                            <div></div>-->
+                <!--                                            <p>-->
+                <!--                                                A rythm-based action game made using pygame made for the Pygame-->
+                <!--                                                Community-->
+                <!--                                                Summer Jam 2022.-->
+                <!--                                            </p>-->
+                <!--                                            <div class="made-with-tool">-->
+                <!--                                                Pygame-->
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </td>-->
+                <!--                    </tr>-->
+                <!--                </table>-->
+
+                <div class="game-dev-card-container center-div">
+                    <a id="defender" class="game-dev-card" href="">
+                        <div class="game-dev-card-content center-div">
+                            <div id="defender-img" class="game-img">
+                            </div>
+                            <br>
+                            <div class="center-div">
+                                <div style="width: 80%;">
+                                    <span style="font-size: 25px; font-style: italic"><b>Defender Remastered</b></span>
+                                    <div></div>
+                                    <p>
+                                        A Remaster of the 1980's classic, now featuring an online Leaderboard!
+                                    </p>
+                                    <div class="made-with-tool">
+                                        Pygame
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="aqua-refresh" class="game-dev-card" href="">
+                        <div class="game-dev-card-content center-div">
+                            <div id="aqua-refresh-img" class="game-img">
+                            </div>
+                            <br>
+                            <div class="center-div">
+                                <div style="width: 80%;">
+                                    <span style="font-size: 25px; font-style: italic"><b>Aqua Refresh</b></span>
+                                    <div></div>
+                                    <p>
+                                        This is a simple game about cleaning a public pond which gets constantly
+                                        filled with garbage and increases the pollution level.
+                                    </p>
+                                    <div class="made-with-tool">
+                                        Pygame
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                    <a id="mineswept-island" class="game-dev-card" href="">
+                        <div class="game-dev-card-content center-div">
+                            <div id="mineswept-island-img" class="game-img">
+                            </div>
+                            <br>
+                            <div class="center-div">
+                                <div style="width: 80%;">
+                                    <span style="font-size: 25px; font-style: italic"><b>Mineswept Islands</b></span>
+                                    <div></div>
+                                    <p>
+                                        A short 2D top down puzzle game based on MineSweeper where the
+                                        player needs to solve each levels by finding the hidden mines
+                                    </p>
+                                    <div class="made-with-tool">
+                                        Godot
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="dicey" class="game-dev-card" href="">
+                        <div class="game-dev-card-content">
+                            <div id="dicey-img" class="game-img">
+                            </div>
+                            <br>
+                            <div class="center-div">
+                                <div style="width: 80%;">
+                                    <span style="font-size: 25px; font-style: italic"><b>Dicey</b></span>
+                                    <div></div>
+                                    <p>
+                                        A short puzzle-platformer made using p5.js for Mini Jam 83: Dread
+                                    </p>
+                                    <div class="made-with-tool">
+                                        Javascript
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="dimension-beats" class="game-dev-card">
+                        <div class="game-dev-card-content center-div">
+                            <div id="dimension-beats-img" class="game-img">
+                            </div>
+                            <br>
+                            <div class="center-div">
+                                <div style="width: 80%;">
+                                    <span style="font-size: 25px; font-style: italic"><b>Dimension Beats</b></span>
+                                    <div></div>
+                                    <p>
+                                        A rythm-based action game made using pygame made for the Pygame
+                                        Community
+                                        Summer Jam 2022.
+                                    </p>
+                                    <div class="made-with-tool">
+                                        Pygame
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="bug-invaders" class="game-dev-card">
+                        <div class="game-dev-card-content center-div">
+                            <div id="bug-invaders-img" class="game-img">
+                            </div>
+                            <br>
+                            <div class="center-div">
+                                <div style="width: 80%;">
+                                    <span style="font-size: 25px; font-style: italic"><b>Bug Invaders</b></span>
+                                    <div></div>
+                                    <p>
+                                        A simple arcade infinite shooter where you shoot bugs before they can reach the
+                                        bottom.
+                                    </p>
+                                    <div class="made-with-tool">
+                                        Pygame
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+.game-dev-card {
+    display: flex;
+    margin: 25px;
+    /*padding: 40px;*/
+    width: 350px;
+    height: 450px;
+    background: rgb(22, 22, 22);
+    /*backdrop-filter: blur(10px);*/
+    /*border: 2px solid white;*/
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: 0.25s;
+    justify-content: center;
+    font-family: quicksand, sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.game-dev-card:hover {
+    /*border: 3px solid white;*/
+    /*border-color: rgba(0,0,0,0);*/
+    background: black;
+    transform: scale(0.9);
+    box-shadow: 0 0 40px 20px red; /* Glow effect on hover */
+}
+
+#aqua-refresh:hover {
+    box-shadow: 0 0 40px 20px #0075AA;
+}
+
+#dimension-beats:hover{
+    box-shadow: 0 0 40px 20px red;
+}
+#defender:hover {
+    box-shadow: 0 0 40px 20px red;
+}
+
+#mineswept-island:hover{
+    box-shadow: 0 0 40px 20px red;
+}
+
+.game-dev-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.game-dev-card-content {
+    border: 1px;
+    display: block;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    /*text-align: center;*/
+    /*position: relative;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.made-with-tool{
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+    text-decoration: none;
+}
+
+.made-with-tool::before{
+    color: white;
+    content: "Made With: ";
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.game-img {
+    position: relative; /* Position the child absolutely within the parent */
+    top: 0; /* Align the top of the child with the top of the parent */
+    left: 0; /* Align the left of the child with the left of the parent */
+    width: 100%; /* Span 100% of the parent's width */
+    height: 50%; /* Span 50% of the parent's height */
+    background-size: cover;
+    background-position: center;
+    /*background-image: url("https://img.itch.zone/aW1nLzk0NDgxNzIucG5n/original/j54T8i.png");*/
+}
+
+#dimension-beats-img {
+    background-image: url("https://img.itch.zone/aW1nLzk0NDgxNzIucG5n/original/j54T8i.png");
+}
+
+#aqua-refresh-img {
+    background-image: url("https://img.itch.zone/aW1hZ2UvMjIxMDQ4Mi8xMzA3Njg0MS5wbmc=/original/pyddsW.png");
+}
+
+#defender-img{
+    background-image: url("https://img.itch.zone/aW1hZ2UvMTM2ODY0OS84MDQyMzkzLnBuZw==/original/Asc7Rt.png");
+}
+
+#mineswept-island-img{
+    background-image: url("https://img.itch.zone/aW1hZ2UvMjEyMzk2Ni8xMjUxMDI4OS5wbmc=/original/Ur%2BtV3.png");
+}
+
+#bug-invaders-img{
+    background-image: url("https://img.itch.zone/aW1hZ2UvMTg1MTk0Mi8xMDg3NTQ0MC5naWY=/original/QbWBB0.gif");
+}
+
+#dicey-img{
+    background-image: url("https://img.itch.zone/aW1nLzYzODI1NzMuZ2lm/315x250%23c/M3OfG9.gif");
+}
