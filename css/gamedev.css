@@ -1,3 +1,28 @@
+.left-arrow {
+    content: url("assets/images/ui/arrow-right.png");
+    position: absolute;
+    /*bottom: 20px;*/
+    /*right: 20px;*/
+    /*translate: 100% 50%;*/
+    padding: 0;
+    scale: 0.2;
+    transition: 0.1s;
+    opacity: 0.5;
+    /*transform: scaleX(-1);*/
+}
+
+abc{
+    position: absolute;
+    background-image: url("assets/images/ui/arrow-right.png");
+}
+
+.left-arrow :hover {
+    transform: scale(1.25);
+    border: 10px solid white;
+    border-radius: 50px;
+    opacity: 1;
+}
+
 .game-dev-card {
     display: flex;
     margin: 25px;
