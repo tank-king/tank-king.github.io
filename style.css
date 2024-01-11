@@ -111,7 +111,8 @@ body{
 }
 
 #card4::before{
-    background-image: url("https://i.gifer.com/7sXy.gif");
+    /*background-image: url("https://i.gifer.com/7sXy.gif");*/
+    background-image: url("https://64.media.tumblr.com/72911b43e173bc8e9b16d8b5257c34a2/tumblr_o1kcwl6GKR1v1wfzlo1_500.gif");
     /*background-image: url("https://img.itch.zone/aW1hZ2UvMTExMzk4MC82NjMzNDU2LmdpZg==/original/XqJsVz.gif");*/
     /*background-image: url("https://img.itch.zone/aW1hZ2UvMTM2ODY0OS84MDQyNTU0LmdpZg==/original/CYZhZi.gif");*/
 }

@@ -1,22 +1,16 @@
 .left-arrow {
-    content: url("assets/images/ui/arrow-right.png");
+    content: url("../assets/images/ui/arrow-right.png");
+    background-size: contain;
     position: absolute;
-    /*bottom: 20px;*/
-    /*right: 20px;*/
-    /*translate: 100% 50%;*/
     padding: 0;
-    scale: 0.2;
+    top: 50px;
+    left: 50px;
     transition: 0.1s;
     opacity: 0.5;
-    /*transform: scaleX(-1);*/
+    scale: -1 1;
 }
 
-abc{
-    position: absolute;
-    background-image: url("assets/images/ui/arrow-right.png");
-}
-
-.left-arrow :hover {
+.left-arrow:hover {
     transform: scale(1.25);
     border: 10px solid white;
     border-radius: 50px;
@@ -55,18 +49,19 @@ abc{
     box-shadow: 0 0 40px 20px #0075AA;
 }
 
-#dimension-beats:hover{
+#dimension-beats:hover {
     box-shadow: 0 0 40px 20px red;
 }
+
 #defender:hover {
     box-shadow: 0 0 40px 20px red;
 }
 
-#mineswept-island:hover{
+#mineswept-island:hover {
     box-shadow: 0 0 40px 20px red;
 }
 
-.game-dev-card-container{
+.game-dev-card-container {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
@@ -87,14 +82,14 @@ abc{
     /*transform: translate(-50%, -50%);*/
 }
 
-.made-with-tool{
+.made-with-tool {
     font-size: 30px;
     font-weight: bold;
     color: orange;
     text-decoration: none;
 }
 
-.made-with-tool::before{
+.made-with-tool::before {
     color: white;
     content: "Made With: ";
     text-decoration: none;
@@ -120,18 +115,18 @@ abc{
     background-image: url("https://img.itch.zone/aW1hZ2UvMjIxMDQ4Mi8xMzA3Njg0MS5wbmc=/original/pyddsW.png");
 }
 
-#defender-img{
+#defender-img {
     background-image: url("https://img.itch.zone/aW1hZ2UvMTM2ODY0OS84MDQyMzkzLnBuZw==/original/Asc7Rt.png");
 }
 
-#mineswept-island-img{
+#mineswept-island-img {
     background-image: url("https://img.itch.zone/aW1hZ2UvMjEyMzk2Ni8xMjUxMDI4OS5wbmc=/original/Ur%2BtV3.png");
 }
 
-#bug-invaders-img{
+#bug-invaders-img {
     background-image: url("https://img.itch.zone/aW1hZ2UvMTg1MTk0Mi8xMDg3NTQ0MC5naWY=/original/QbWBB0.gif");
 }
 
-#dicey-img{
+#dicey-img {
     background-image: url("https://img.itch.zone/aW1nLzYzODI1NzMuZ2lm/315x250%23c/M3OfG9.gif");
 }
