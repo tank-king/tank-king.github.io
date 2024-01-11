@@ -21,6 +21,12 @@ export const Game = (p) => {
         }
 
         update() {
+            // const d = this.pos().dist(p.createVector(p.mouseX, p.mouseY))
+            // if (d <= 280){
+            //     let angle = -p.atan2((p.mouseY - this.y), (p.mouseX - this.x))
+            //     this.x += p.cos(angle) * p.map(d, 0, 280, 5, 0)
+            //     this.y += p.sin(angle) * p.map(d, 0, 280, 5, 0)
+            // }
             this.x += this.dx;
             this.y += this.dy;
             if (this.x < -this.r / 2) {
@@ -42,7 +48,7 @@ export const Game = (p) => {
             const d = this.pos().dist(p.createVector(p.mouseX, p.mouseY))
             let dr = 0;
             if (d <= 250){
-                dr = p.map(d, 0, 250, 10, 0)
+                dr = p.map(d, 0, 250, 15, 0)
             }
             // p.fill([255, 255, 255, 150 + dr * 10])
             p.ellipse(this.x, this.y, this.r + dr);
