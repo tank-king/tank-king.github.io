@@ -83,12 +83,36 @@
 
 
 .showcase-img {
-    position: relative; /* Position the child absolutely within the parent */
-    top: 0; /* Align the top of the child with the top of the parent */
-    left: 0; /* Align the left of the child with the left of the parent */
-    width: 100%; /* Span 100% of the parent's width */
-    height: 50%; /* Span 50% of the parent's height */
+    position: relative; /* position the child absolutely within the parent */
+    top: 0; /* align the top of the child with the top of the parent */
+    left: 0; /* align the left of the child with the left of the parent */
+    width: 100%; /* span 100% of the parent's width */
+    height: 50%; /* span 50% of the parent's height */
     background-size: cover;
     background-position: center;
     /*background-image: url("https://img.itch.zone/aW1nLzk0NDgxNzIucG5n/original/j54T8i.png");*/
+}
+
+
+/*based on http://projects.verou.me/bubbly/*/
+.speech-bubble {
+    position: absolute;
+    padding: 10px;
+    background: #01828e;
+    border-radius: .4em;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+    border-right-color: #01828e;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -15px;
+    margin-left: -30px;
 }
