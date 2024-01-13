@@ -17,56 +17,6 @@
     opacity: 1;
 }
 
-
-.showcase-card {
-    display: flex;
-    margin: 25px;
-    padding: 40px;
-    width: 956px;
-    height: 450px;
-    border: 2px solid white;
-    border-radius: 20px;
-    box-sizing: border-box;
-    transition: 0.25s;
-    justify-content: center;
-    font-family: quicksand, sans-serif;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-    overflow: hidden;
-}
-
-
-.showcase-card:hover {
-    /*border: 3px solid white;*/
-    /*border-color: rgba(0,0,0,0);*/
-    background: black;
-    transform: scale(1.0);
-    box-shadow: 0 0 40px 20px red; /* Glow effect on hover */
-}
-
-.showcase-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-}
-
-.showcase-card-content {
-    border: 1px;
-    display: block;
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    width: 100%;
-    align-content: center;
-    align-items: center;
-    /*text-align: center;*/
-    /*position: relative;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%, -50%);*/
-}
-
-
 .made-with-tool {
     font-size: 30px;
     font-weight: bold;
@@ -93,13 +43,31 @@
     /*background-image: url("https://img.itch.zone/aW1nLzk0NDgxNzIucG5n/original/j54T8i.png");*/
 }
 
+.showcase-card:not(:hover) .speech-bubble{
+    display: none;
+}
+
+.showcase-card:hover .speech-bubble{
+    display: block;
+    opacity: 1;
+}
+
+.showcase-card#PyRock2D::after{
+    content: url("../assets/images/logos/PyRock2D-logo.png");
+}
+
+.showcase-card#ScoreUnlocked::after{
+    content: url("../assets/images/logos/scoreunlocked-logo.png");
+}
 
 /*based on http://projects.verou.me/bubbly/*/
 .speech-bubble {
-    position: absolute;
+    position: fixed;
     padding: 10px;
-    background: #01828e;
+    background: rgba(0, 0, 0, 0.9);
     border-radius: .4em;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 .speech-bubble:after {
@@ -110,9 +78,14 @@
     width: 0;
     height: 0;
     border: 30px solid transparent;
-    border-right-color: #01828e;
+    border-right-color: rgba(0, 0, 0, 0.9);
     border-left: 0;
     border-bottom: 0;
     margin-top: -15px;
     margin-left: -30px;
+    transition: opacity 1s ease;
+}
+
+.speech-bubble-content{
+    font-size: 100px;
 }
