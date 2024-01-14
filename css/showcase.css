@@ -68,11 +68,12 @@
     border: 2px solid white;
     border-radius: .4em;
     opacity: 0;
+    width: 280px;
     transition: opacity 1s ease;
 }
 
 .speech-bubble:after{
-    content: url("../assets/images/logos/popup-tick-right.png");
+    content: url("../assets/images/ui/popup-left-arrow.png");
     position: absolute;
     left: 0;
     top: 50%;
@@ -99,5 +100,7 @@
 
 .speech-bubble-content {
     padding: 20px;
-    font-size: 40px;
+    font-family: quicksand, serif;
+    font-size: 25px;
+    color: white;
 }

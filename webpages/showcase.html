@@ -45,33 +45,37 @@
             </nav>
         </div>
         <div class="center-div">
-            <div id="PyRock2D" class="showcase-card">
-                <div class="speech-bubble">
-                    <div class="speech-bubble-content">hii<br> this is
-                        another <br>
-                        line
-                        yoo
-                        oooo<br>yo<br>yo<br>yo
+            <a href="">
+                <div id="PyRock2D" class="showcase-card">
+                    <div class="speech-bubble">
+                        <div class="speech-bubble-content">
+                            A 2D Rock Generator to add beautiful rocks to your collection :)
+                            <br><br>
+                            Uses:
+                            <ul>
+                                <li>Python</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="ScoreUnlocked" class="showcase-card">
-                <div class="speech-bubble">
-                    <div class="speech-bubble-content">hii<br> this is
-                        another <br>
-                        line
-                        yoo
+            </a>
+            <a href="">
+                <div id="ScoreUnlocked" class="showcase-card">
+                    <div class="speech-bubble">
+                        <div class="speech-bubble-content">
+                            An auto - authenticating leaderboard service for game developers
+                            <br><br>
+                            Uses:
+                            <ul>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>Flask</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div><div id="ScoreUnlocked1" class="showcase-card">
-                <div class="speech-bubble">
-                    <div>hii<br> this is
-                        another <br>
-                        line
-                        yoo
-                    </div>
-                </div>
-            </div>
+            </a>
         </div>
 
         <script>
@@ -84,8 +88,13 @@
                     }
                     else {
                         bubble.style.left = (e.clientX + 20) + "px";
-                        bubble.style.top = (e.clientY - bubble.offsetHeight / 2 - 10) + "px";
-                        // console.log(bubble.offsetHeight);
+                        let offset = bubble.offsetHeight / 2 + 10
+                        let y = (e.clientY - offset)
+                        if (e.clientY + offset >= window.innerHeight){
+                            y = window.innerHeight - 2 * offset;
+                        }
+                        bubble.style.top = y + "px";
+                        // console.log(y, window.innerHeight);
                     }
                 });
             }
