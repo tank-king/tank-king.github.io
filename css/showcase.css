@@ -43,49 +43,61 @@
     /*background-image: url("https://img.itch.zone/aW1nLzk0NDgxNzIucG5n/original/j54T8i.png");*/
 }
 
-.showcase-card:not(:hover) .speech-bubble{
+.showcase-card:not(:hover) .speech-bubble {
     display: none;
 }
 
-.showcase-card:hover .speech-bubble{
+.showcase-card:hover .speech-bubble {
     display: block;
     opacity: 1;
 }
 
-.showcase-card#PyRock2D::after{
+.showcase-card#PyRock2D::after {
     content: url("../assets/images/logos/PyRock2D-logo.png");
 }
 
-.showcase-card#ScoreUnlocked::after{
+.showcase-card#ScoreUnlocked::after {
     content: url("../assets/images/logos/scoreunlocked-logo.png");
 }
 
 /*based on http://projects.verou.me/bubbly/*/
 .speech-bubble {
     position: fixed;
-    padding: 10px;
+    /*padding: 10px;*/
     background: rgba(0, 0, 0, 0.9);
+    border: 2px solid white;
     border-radius: .4em;
     opacity: 0;
     transition: opacity 1s ease;
 }
 
-.speech-bubble:after {
-    content: '';
+.speech-bubble:after{
+    content: url("../assets/images/logos/popup-tick-right.png");
     position: absolute;
     left: 0;
     top: 50%;
     width: 0;
     height: 0;
-    border: 30px solid transparent;
-    border-right-color: rgba(0, 0, 0, 0.9);
-    border-left: 0;
-    border-bottom: 0;
-    margin-top: -15px;
-    margin-left: -30px;
-    transition: opacity 1s ease;
+    margin-left: -20px;
 }
 
-.speech-bubble-content{
-    font-size: 100px;
+/*.speech-bubble:after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 50%;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border: 30px solid transparent;*/
+/*    border-right-color: rgba(0, 0, 0, 0.9);*/
+/*    border-left: 0;*/
+/*    border-bottom: 0;*/
+/*    margin-top: -15px;*/
+/*    margin-left: -30px;*/
+/*    transition: opacity 1s ease;*/
+/*}*/
+
+.speech-bubble-content {
+    padding: 20px;
+    font-size: 40px;
 }

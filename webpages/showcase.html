@@ -44,11 +44,10 @@
                 </ul>
             </nav>
         </div>
-
         <div class="center-div">
             <div id="PyRock2D" class="showcase-card">
                 <div class="speech-bubble">
-                    <div>hii<br> this is
+                    <div class="speech-bubble-content">hii<br> this is
                         another <br>
                         line
                         yoo
@@ -57,15 +56,15 @@
                 </div>
             </div>
             <div id="ScoreUnlocked" class="showcase-card">
-                <div class="speech-bubble" style="width: 100px; left: 100px">
-                    <div>hii<br> this is
+                <div class="speech-bubble">
+                    <div class="speech-bubble-content">hii<br> this is
                         another <br>
                         line
                         yoo
                     </div>
                 </div>
             </div><div id="ScoreUnlocked1" class="showcase-card">
-                <div class="speech-bubble" style="width: 100px; left: 100px">
+                <div class="speech-bubble">
                     <div>hii<br> this is
                         another <br>
                         line
@@ -84,9 +83,9 @@
                     if (bubble.style.display === "none") {
                     }
                     else {
-                        bubble.style.left = (e.clientX + 30) + "px";
-                        bubble.style.top = (e.clientY - bubble.offsetHeight / 2 - 15) + "px";
-                        console.log(bubble.offsetHeight);
+                        bubble.style.left = (e.clientX + 20) + "px";
+                        bubble.style.top = (e.clientY - bubble.offsetHeight / 2 - 10) + "px";
+                        // console.log(bubble.offsetHeight);
                     }
                 });
             }
