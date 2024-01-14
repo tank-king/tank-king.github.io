@@ -40,7 +40,6 @@
     height: 50%; /* span 50% of the parent's height */
     background-size: cover;
     background-position: center;
-    /*background-image: url("https://img.itch.zone/aW1nLzk0NDgxNzIucG5n/original/j54T8i.png");*/
 }
 
 .showcase-card:not(:hover) .speech-bubble {
@@ -53,11 +52,11 @@
 }
 
 .showcase-card#PyRock2D::after {
-    content: url("../assets/images/logos/PyRock2D-logo.png");
+    content: url("../assets/images/banners/PyRock2D-banner.png");
 }
 
 .showcase-card#ScoreUnlocked::after {
-    content: url("../assets/images/logos/scoreunlocked-logo.png");
+    content: url("../assets/images/banners/scoreunlocked-banner.png");
 }
 
 /*based on http://projects.verou.me/bubbly/*/
